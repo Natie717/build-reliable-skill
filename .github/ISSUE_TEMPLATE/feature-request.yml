@@ -1,0 +1,40 @@
+name: Feature request
+description: 提出有真实场景和证据支持的改进建议
+title: "[Idea]: "
+labels:
+  - enhancement
+  - needs-triage
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 真实问题
+      description: 说明当前流程在哪里不足，不要只描述想要的功能
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 使用场景与证据
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 候选改进
+    validations:
+      required: true
+  - type: textarea
+    id: boundary
+    attributes:
+      label: 可能影响的边界或回归
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 我已经删除敏感信息和未经授权的第三方内容
+          required: true
+

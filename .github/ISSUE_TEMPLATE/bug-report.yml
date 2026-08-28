@@ -1,0 +1,77 @@
+name: Bug report
+description: 报告可复现的触发、流程、权限或输出问题
+title: "[Bug]: "
+labels:
+  - bug
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请只提供最小、已脱敏的复现材料。不要提交凭据、私人路径、客户资料或完整私人对话。
+  - type: input
+    id: version
+    attributes:
+      label: Skill 版本
+      placeholder: v0.1.0-beta.1 或 commit SHA
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 环境
+      description: 宿主、客户端版本、模型与操作系统
+      placeholder: Codex / Claude Code，版本，模型，macOS / Windows / Linux
+    validations:
+      required: true
+  - type: dropdown
+    id: invocation
+    attributes:
+      label: 调用方式
+      options:
+        - 显式调用
+        - 隐式触发
+        - 负向不触发
+        - 阶段内继续
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 最小复现步骤
+      description: 说明你做了什么，不要粘贴敏感内容
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期结果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 严重程度
+      options:
+        - 阻塞使用
+        - 权限或隐私风险
+        - 主要流程错误
+        - 交互成本或表达问题
+        - 轻微问题
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 我已经删除凭据、联系方式、私人路径、客户资料和未脱敏对话
+          required: true
+

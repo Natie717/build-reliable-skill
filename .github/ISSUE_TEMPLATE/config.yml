@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and open discussion
+    url: https://github.com/Natie717/build-reliable-skill/discussions
+    about: 使用问题、经验分享和尚未形成可复现缺陷的想法请放在 Discussions
+  - name: Private security report
+    url: https://github.com/Natie717/build-reliable-skill/security
+    about: 安全问题请优先使用私密漏洞报告，不要公开敏感细节
+
