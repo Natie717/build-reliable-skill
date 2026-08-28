@@ -37,4 +37,3 @@ body:
       options:
         - label: 我已经删除敏感信息和未经授权的第三方内容
           required: true
-

@@ -74,4 +74,3 @@ body:
       options:
         - label: 我已经删除凭据、联系方式、私人路径、客户资料和未脱敏对话
           required: true
-
